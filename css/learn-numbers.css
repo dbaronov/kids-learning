@@ -1,0 +1,43 @@
+.learn-numbers {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+#learn-numbers__number {
+  font-size: 120px;
+}
+
+#learn-numbers__generate {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 150;
+  font-size: 40px;
+  outline: none;
+  border: 1px solid #ececec;
+  border-radius: 6px;
+}
+
+#learn-numbers__from-to {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+#learn-numbers__from-to li input {
+  line-height: 30px;
+  font-size: 24px;
+  width: 70px;
+  outline: none;
+  border: 1px solid #888888;
+  border-radius: 4px;
+}
+
+#learn-numbers__from-to li:first-of-type {
+  margin-right: 20px;
+}
