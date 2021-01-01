@@ -12,11 +12,11 @@ var result = undefined
 var operators = ['+', '-']
 var selectedOperator = undefined
 
-var randomNumbers = function(min, max) {
+var randomNumber = function(min, max) {
   min = Math.ceil(min)
   max = Math.floor(max)
 
-  return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
+  return (Math.floor(Math.random() * max) + min);
 }
 
 var getSelectedOperator = function() {
@@ -28,16 +28,21 @@ $learnNumbersGenerateBtn.click(function() {
   var from = $learnNumbersFrom.val()
   var to = $learnNumbersTo.val()
 
-  firstGeneratedNumber = randomNumbers(from, to)
-  secondGeneratedNumber = randomNumbers(from, to)
+  firstGeneratedNumber = randomNumber(from, to)
+  secondGeneratedNumber = randomNumber(from, to)
   getSelectedOperator()
+  
+  result =  eval(firstGeneratedNumber + selectedOperator + secondGeneratedNumber)
 
-  $learnNumbersNumber.text(firstGeneratedNumber + selectedOperator + secondGeneratedNumber)
-  $resultHolder.text('?')
+  if (result > 0) {
+    $learnNumbersNumber.text(firstGeneratedNumber + selectedOperator + secondGeneratedNumber)
+    $resultHolder.text('?')
+  } else {
+    $learnNumbersGenerateBtn.click()
+  }
 })
 
-$learnNumbersResultBtn.click(function() {
 
-  result =  eval(firstGeneratedNumber + selectedOperator + secondGeneratedNumber)
+$learnNumbersResultBtn.click(function() {
   $resultHolder.text(result)
 })
