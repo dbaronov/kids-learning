@@ -1,0 +1,46 @@
+.add-substract-numbers {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+#add-substract-numbers__number,
+#add-substract-numbers__operator,
+#add-substract-numbers__result {
+  font-size: 120px;
+}
+
+#add-substract-numbers__generate-btn,
+#add-substract-numbers__result-btn {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 150;
+  font-size: 40px;
+  outline: none;
+  border: 1px solid #ececec;
+  border-radius: 6px;
+}
+
+#add-substract-numbers__from-to {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+#add-substract-numbers__from-to li input {
+  line-height: 30px;
+  font-size: 24px;
+  width: 70px;
+  outline: none;
+  border: 1px solid #888888;
+  border-radius: 4px;
+}
+
+#add-substract-numbers__from-to li:first-of-type {
+  margin-right: 20px;
+}
