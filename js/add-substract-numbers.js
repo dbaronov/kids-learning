@@ -32,7 +32,7 @@ $learnNumbersGenerateBtn.click(function() {
   secondGeneratedNumber = randomNumbers(from, to)
   getSelectedOperator()
 
-  $learnNumbersNumber.text(firstGeneratedNumber + " " + selectedOperator + " " + secondGeneratedNumber)
+  $learnNumbersNumber.text(firstGeneratedNumber + selectedOperator + secondGeneratedNumber)
   $resultHolder.text('?')
 })
 

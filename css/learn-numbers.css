@@ -4,14 +4,14 @@
 }
 
 #learn-numbers__number {
-  font-size: 120px;
+  font-size: 100px;
 }
 
 #learn-numbers__generate {
   background-color: #4CAF50; /* Green */
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 5px 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;

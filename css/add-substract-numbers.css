@@ -6,7 +6,7 @@
 #add-substract-numbers__number,
 #add-substract-numbers__operator,
 #add-substract-numbers__result {
-  font-size: 120px;
+  font-size: 100px;
 }
 
 #add-substract-numbers__generate-btn,
@@ -14,7 +14,7 @@
   background-color: #4CAF50; /* Green */
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 5px 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
